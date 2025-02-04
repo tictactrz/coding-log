@@ -19,7 +19,9 @@
 2. Read Chapter 2 of Grokking Algorithms: Selection Sort, Arrays, Linked Lists
 
 Wrote this Linked List implementation: 
-```class Node {
+
+```
+class Node {
     constructor(data) {
         this.data = data;
         this.next = null;
@@ -99,7 +101,8 @@ list.append(20);
 list.append(30);
 list.prepend(10);
 list.delete(20);
-list.print();```
+list.print();
+```
 
 
 Main takeaways from my notes on Chapter 2: 
