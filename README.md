@@ -13,6 +13,7 @@
 
 ## Day 3 - Monday, February 3, 2025
 1. Solved leetcode problem [#1 - Two Sum](https://leetcode.com/problems/two-sum/description/)
+
    ![Two Sum Solution](coding-log/images/1-two-sum.js.png)
 
 
@@ -123,4 +124,34 @@ Main takeaways from my notes on Chapter 2:
 
 ## Day 4 - Tuesday, February 4, 2025
 1. Solved leetcode problem [#217 - Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
+
+   ![Contains Duplicate Solution](coding-log/images/217-contains-duplicate.png)
+
 2. Read Chapter 3 of Grokking Algorithms 
+
+Main takeaways from Chapter 3 - Recursion:
+
+1. **Core Concepts of Recursion:**
+   - Function calls itself to solve smaller versions of the same problem
+   - Must have a base case to prevent infinite loops
+   - Uses call stack to track function calls
+
+2. **Practical Implementation:**
+   - Implemented factorial function using recursion
+   - Learned about call stack visualization
+   - Understood how recursive functions "build up" and "resolve down"
+
+3. **Key Principles:**
+   - Base case: Condition that stops recursion
+   - Recursive case: Breaking problem into smaller subproblems
+   - Each recursive call creates new stack frame
+
+4. **When to Use Recursion:**
+   - Best for problems that naturally break into subproblems
+   - Good for tree structures and divide-and-conquer algorithms
+   - Consider memory usage (call stack) for deep recursions
+
+5. **Common Patterns:**
+   - Breaking down numbers (factorial)
+   - Dividing arrays (binary search)
+   - Tree-like structures (file systems)
