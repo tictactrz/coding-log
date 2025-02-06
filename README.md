@@ -155,3 +155,18 @@ Main takeaways from Chapter 3 - Recursion:
    - Breaking down numbers (factorial)
    - Dividing arrays (binary search)
    - Tree-like structures (file systems)
+
+
+## Day 5 - Wednesday, February 5, 2025
+1. Solved leetcode problem [#344 - Reverse String](https://leetcode.com/problems/reverse-string/description/)
+
+    ![Reverse String Solution](coding-log/images/344-reverse-string.png)
+
+2. Mostly solved leetcode problem #88 - Merge Sorted Arrays
+- the solution only fixes the reference to the array but doesn't modify the provided array in-place
+
+3. Mostly solved leetcode problem #242 - Valid Anagram
+- still need to solved for edge cases
+
+
+## Day 6 - Thursday, February 6, 2025
