@@ -34,38 +34,56 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 */
 
-var merge = function(nums1, m, nums2, n) {
-    nums1 = [...nums1, ...nums2];
-    
-    let left = 0;
-    let right = nums1.length - 1;
 
-    while (left < right) {
-        if (nums1[left] === 0) {
+// SOLUTION 1: 
+// Failed because it was solving the solution for a reference of nums1 instead of manipulating nums1 in place
 
-            let temp = nums1[left];
-            nums1[left] = nums1[right];
-            nums1[right] = temp;
+// var merge = function(nums1, m, nums2, n) {
+//     nums1 = [...nums1, ...nums2];
 
-            nums1.pop();
+//     let left = 0;
+//     let right = nums1.length - 1;
 
-            right--;
+//     while (left < right) {
+//         if (nums1[left] === 0) {
+
+//             let temp = nums1[left];
+//             nums1[left] = nums1[right];
+//             nums1[right] = temp;
+
+//             nums1.pop();
+
+//             right--;
+//         }
+//         left++;
+//     }
+//     nums1.sort();
+//     console.log(nums1);
+
+
+
+// SOLUTION 2: 
+// O((n+m)log(n+m))
+const merge = (nums1, m, nums2, n) => {
+    let p1 = m - 1;
+    let p2 = n - 1;
+    let endOfNums1 = n + m;
+
+    while (p1 < endOfNums1 && p2 >= 0) {
+        if (nums1[p1] === 0) {
+            nums1[p1] = nums2[p2];
+            p2--;
         }
-        left++;
+        p1++
     }
-    nums1.sort();
-    console.log(nums1);
-
-
-
+    nums1.sort((a, b) => a - b);
 };
 
 
-
-let nums1 = [1,2,3,0,0,0];
-let m = 3;
-let nums2 = [2,5,6];
-let n = 3;
-
-merge(nums1, m, nums2, n);
-console.log(nums1);
+// Test cases
+console.log('Failed test:');
+let nums1 = [-1,-1,0,0,0,0];
+let nums2 = [-1, 0];
+merge(nums1, 4, nums2, 2);
+console.log(nums1);  // Expected: [-1,-1,-1,0,0,0]
+// actual output: [ -1, -1, -1, 0, 0, undefined ]

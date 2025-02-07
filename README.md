@@ -170,3 +170,25 @@ Main takeaways from Chapter 3 - Recursion:
 
 
 ## Day 6 - Thursday, February 6, 2025
+1. Solved leetcode problem [#88 - Merge Sorted Arrays](https://leetcode.com/problems/merge-sorted-array/description/)
+
+    ![Merge Sorted Arrays](coding-log/images/88-merge-sorted-arrays.png)
+
+2. Solved leetcode problem [#383 - Ransom Note](https://leetcode.com/problems/ransom-note/description/)
+
+    ![Ransom Note](coding-log/images/383-ransom-note.png)
+
+3. Solved leetcode problem [#704 - Binary Search](https://leetcode.com/problems/binary-search/description/)
+
+    ![Binary Search](coding-log/images/704-binary-search.png)
+
+4. Solved leetcode problem [#14 - Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)
+
+    ![Longest Common Prefix](coding-log/images/14-longest-common-prefix.png)
+- I solved this one during a mock interview at work. I did decent but was overcomplicating my solution. The feedback was that I should be ready for the real interview now.
+
+5. Mostly solved leetcode problem #242 - Valid Anagram. I will go back and solve for the edgecases tomorrow.
+
+6. Set up the new Informy project from scratch
+
+## Day 7 - Friday, February 7, 2025
