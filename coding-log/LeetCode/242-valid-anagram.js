@@ -18,55 +18,63 @@ Input: s = "rat", t = "car"
 Output: false
 */
 
+
+
+// SOLUTION 1: 
+// O(n log n) - due to sorting but seems easier to read and understand
+var isAnagram = function (s, t) {
+    const s_sorted = s.split("").sort().join("");
+    const t_sorted = t.split("").sort().join("");
+
+    if (s_sorted === t_sorted) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+// SOLUTION 2:
+// O(n) - more effecient but more complicated
 var isAnagram = function (s, t) {
     if (s.length !== t.length) {
         return false;
     }
 
-    // doesn't work for cases like this one: 
-    // s = "aacc" and t = "ccac"
-    // for (let i = 0; i < s.length; i++) {
-    //     if (!t.includes(s[i])) {
-    //         return false;
-    //     };
-    // }
-    // return true;
+    let sHash = {};
+    let tHash = {};
 
-
-    // Brute force - O(n²)
-    let sArr = s.split('');
-    let tArr = t.split('');
-
-    for (let i = 0; i < sArr.length; i++) {
-        for (let j = i + 1; j < tArr.length; j++) {
-            if (sArr[i] === tArr[j]) {
-                tArr.pop(tArr[j]);
-            }
-        }
+    for (let char of s) {
+        sHash[char] = (sHash[char] || 0) + 1;
+    }
+    for (let char of t) {
+        tHash[char] = (tHash[char] || 0) + 1;
     }
 
-
-
-
-    // Hashmap - O(n)
-    
+    for (let char in sHash) {
+        if (sHash[char] !== tHash[char]) {
+            return false;
+        }
+    }
+    return true;
 };
+
+
 
 // Test cases
 console.log('Test 1 - Valid anagrams:');
-console.log(isAnagram("anagram", "nagaram")); // true
+console.log(isAnagram1("anagram", "nagaram")); // true
 
 console.log('\nTest 2 - Different lengths:');
-console.log(isAnagram("rat", "cars")); // false
+console.log(isAnagram1("rat", "cars")); // false
 
 console.log('\nTest 3 - Same length but not anagrams:');
-console.log(isAnagram("hello", "world")); // false
+console.log(isAnagram1("hello", "world")); // false
 
 console.log('\nTest 4 - Empty strings:');
-console.log(isAnagram("", "")); // true
+console.log(isAnagram1("", "")); // true
 
 console.log('\nTest 5 - Single character:');
-console.log(isAnagram("a", "a")); // true
+console.log(isAnagram1("a", "a")); // true
 
 console.log('\nTest 6 - Repeated characters:');
 console.log(isAnagram("aacc", "ccaa")); // true
