@@ -192,3 +192,7 @@ Main takeaways from Chapter 3 - Recursion:
 6. Set up the new Informy project from scratch
 
 ## Day 7 - Friday, February 7, 2025
+1. Solved leetcode problem [#242 - Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
+
+    ![Valid Anagram](coding-log/images/242-valid-anagram.png)
+
