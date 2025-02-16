@@ -35,4 +35,4 @@ const canConstruct = (ransomNote, magazine) => {
 };
 
 
-console.log(canConstruct("aa", "aab"));
+console.log(canConstruct("sand", "bananas"));
