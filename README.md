@@ -205,3 +205,9 @@ Main takeaways from Chapter 3 - Recursion:
 1. Solved leetcode problem [#125 - Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)
 
     ![Valid Palindrome](coding-log/images/125-valid-palindrome.png)
+
+## Day 17 - Monday, February 17, 2025
+1. Solved leetcode problem [#977 - Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/)
+
+    ![Squares of a Sorted Array](coding-log/images/977-squares-of-a-sorted-array.png)
+
